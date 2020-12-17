@@ -57,3 +57,40 @@ Route::get('/admin/edit_portal/{id}','AdminController@edit_portal');
 Route::post('admin/edit_portal_final','AdminController@edit_portal_final');
 Route::get('/admin/delete_portal/{id}','AdminController@delete_portal');
 
+
+
+///Portal  /////
+
+Route::get('portal/signup','PortalController@portal_singup');
+Route::post('portal/signup_sub','PortalController@signup_sub');
+Route::get('portal/login','PortalController@login');
+Route::post('portal/login_sub','PortalController@login_sub');
+
+Route::get('portal/dashboard','PortalOperation@dashboard');
+Route::get('portal/exam_from/{id}','PortalOperation@exam_from');
+Route::post('portal/exam_from_submit','PortalOperation@exam_from_submit');
+Route::get('portal/print/{id}','PortalOperation@print');
+Route::get('portal/update_form','PortalOperation@update_form');
+Route::get('portal/student_exam_info','PortalOperation@student_exam_info');
+Route::post('portal/student_exam_info_edit','PortalOperation@student_exam_info_edit');
+Route::get('portal/logout','PortalOperation@logout');
+
+
+
+
+///student signup
+Route::get('student/signup','StudentController@signup');
+Route::post('student/login_sub','StudentController@login_sub');
+
+///studentoperation
+Route::get('student/dashboard','StudentOperation@dashboard');
+Route::get('student/logout','StudentOperation@logout');
+Route::get('student/exam','StudentOperation@exam');
+
+//join exam
+Route::get('student/join_exam','StudentOperation@join_exam');
+
+
+
+
+

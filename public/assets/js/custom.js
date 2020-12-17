@@ -4,11 +4,11 @@ $(document).on('submit','.database_operation',function(){
    var url=$(this).attr('action');
    //alert(url);
    var data=$(this).serialize(); //data lane
-   //console.log(data);
+   //alert(data);
    $.post(url,data,function(fb){
     //	alert(fb);
       var resp =$.parseJSON(fb);
-      //console.log(resp);
+      //alert(resp);
       if(resp.status=='true')
       {
       	alert(resp.message);

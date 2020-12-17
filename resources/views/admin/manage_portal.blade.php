@@ -2,6 +2,7 @@
 @section('title','Manage Portal')
 @section('content')
 
+
 <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -37,6 +38,7 @@
                 </div>
               </div>
               <div class="card-body">
+                
                    
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
